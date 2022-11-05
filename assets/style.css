@@ -1,0 +1,323 @@
+:root {
+  --primary-bg: #131415;
+  --secondary-bg: #282828;
+  --semi-black: #17191b;
+  --semi-gray: #6b7280;
+  --light-gray: #9ca3af;
+  --dark-white: #e5e7eb;
+  --semi-white: #f9fafb;
+  --text-white: #f3f4f6;
+  --white: #fff;
+  --rose: #e11d48;
+  --light-red: #ff005c;
+  --purple: #8c54fb;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.max-w {
+  max-width: 900px;
+}
+
+.max-w-sec {
+  max-width: 900px;
+}
+
+body {
+  background: var(--primary-bg);
+  color: var(--semi-white);
+  padding: 3rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.seccion {
+  border: solid 2px var(--rose);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 10px;
+}
+
+.bg-sec {
+  background-color: var(--secondary-bg);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 10px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.caja-flex {
+  display: flex;
+  height: 100px;
+  width: 100px;
+  background: var(--purple);
+  border-radius: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.caja-flex-stretch {
+  background: var(--rose);
+  width: 100px;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.caja-flex:nth-child(2) {
+  background: var(--rose);
+}
+
+.my {
+  margin: 1rem 0;
+}
+
+.alineado {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.alineado-ac {
+  height: 350px;
+  background-color: var(--semi-gray);
+  border-radius: 1rem;
+  padding: 1rem;
+  max-width: 330px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.bg-terc {
+  background-color: var(--semi-gray);
+  height: 350px;
+  border-radius: 1rem;
+  padding: 1rem;
+  max-width: 500px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.rreverse {
+  flex-direction: row-reverse;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.creverse {
+  flex-direction: column-reverse;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.wrap {
+  display: flex;
+  background: var(--semi-gray);
+  border-radius: 1rem;
+  padding: 1rem;
+  max-width: 250px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.nowr {
+  flex-wrap: nowrap;
+}
+
+.ai-start {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.ai-end {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+.ai-center {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.ai-stretch {
+  display: flex;
+  gap: 10px;
+  align-items: stretch;
+}
+
+.caja-flex-baseline {
+  width: 100px;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.baseline-1 {
+  background: var(--rose);
+  padding-top: 70px;
+}
+
+.baseline-2 {
+  background: var(--purple);
+  padding-top: 150px;
+}
+
+.baseline-3 {
+  background: var(--rose);
+  padding-top: 50px;
+}
+
+.ai-baseline {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+}
+
+.gap {
+  height: fit-content;
+  width: fit-content;
+}
+
+.ac-start {
+  display: flex;
+  gap: 10px;
+  align-content: flex-start;
+}
+
+.ac-end {
+  display: flex;
+  gap: 10px;
+  align-content: flex-end;
+}
+
+.ac-center {
+  align-content: center;
+}
+
+.ac-spa-bet {
+  display: flex;
+  gap: 10px;
+  align-content: space-between;
+}
+
+.ac-spa-aro {
+  display: flex;
+  gap: 10px;
+  align-content: space-around;
+}
+
+.order-1 {
+  order: 2;
+}
+
+.order-2 {
+  order: 3;
+}
+
+.order-3 {
+  order: 1;
+}
+
+.shirnk {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--semi-gray);
+  border-radius: 1rem;
+  max-width: 300px;
+  padding: 1rem;
+}
+
+.glow-1 {
+  flex-grow: 2;
+}
+
+.shirnk-1 {
+  flex-shrink: 0;
+}
+
+.shirnk-2 {
+  flex-shrink: 3;
+}
+
+.shirnk-3 {
+  flex-shrink: 1;
+}
+
+.basis {
+  display: flex;
+  gap: 10px;
+  background-color: var(--semi-gray);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.basis-1 {
+  flex-basis: 150px;
+}
+
+.basis-2 {
+  flex-basis: 500px;
+}
+
+.basis-3 {
+  flex-basis: 50px;
+}
+
+.self {
+  display: flex;
+  gap: 10px;
+  background-color: var(--semi-gray);
+  border-radius: 1rem;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.self-1 {
+  align-self: flex-start;
+}
+
+.self-2 {
+  align-self: center;
+}
+
+.self-3 {
+  align-self: flex-end;
+}

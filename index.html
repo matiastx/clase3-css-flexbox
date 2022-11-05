@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlexBox</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <h1>FlexBox</h1>
+
+    <div class="flx-dir seccion max-w-sec">
+      <h2>Flex direction</h2>
+      <p>Definimos la direccion del flex</p>
+
+      <div class="bg-sec max-w">
+        <p>Row (por defecto)</p>
+        <div class="row my">
+          <div class="caja-flex">1</div>
+          <div class="caja-flex">2</div>
+          <div class="caja-flex">3</div>
+        </div>
+
+        <p>Row reverse</p>
+        <div class="row rreverse my">
+          <div class="caja-flex">1</div>
+          <div class="caja-flex">2</div>
+          <div class="caja-flex">3</div>
+        </div>
+
+        <p>Column</p>
+        <div class="column my">
+          <div class="caja-flex">1</div>
+          <div class="caja-flex">2</div>
+          <div class="caja-flex">3</div>
+        </div>
+
+        <p>Column reverse</p>
+        <div class="column creverse my">
+          <div class="caja-flex">1</div>
+          <div class="caja-flex">2</div>
+          <div class="caja-flex">3</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flx-wrap seccion max-w-sec">
+      <h2>Flex Wrap</h2>
+      <p>
+        Por defecto todos los elementos flex ocupan una sola linea(nowrap).
+        Podemos cambiar esto con esta propiedad.
+      </p>
+      <div class="row bg-sec max-w">
+        <div class="flex-column"></div>
+        <div>
+          <p>Wrap</p>
+          <div class="wrap">
+            <div class="caja-flex">1</div>
+            <div class="caja-flex">2</div>
+            <div class="caja-flex">3</div>
+          </div>
+        </div>
+        <div class="flex-column">
+          <div>
+            <p>No Wrap</p>
+            <div class="wrap nowr">
+              <div class="caja-flex">1</div>
+              <div class="caja-flex">2</div>
+              <div class="caja-flex">3</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="Alineado seccion max-w-sec">
+      <h2>align-items</h2>
+      <p>
+        Con esta prop alineamos los elementos en el eje cruzado. (El contrario
+        al eje principal)
+      </p>
+      <div class="bg-sec mac-w alineado">
+        <div class="flex-column">
+          <p>flex-start</p>
+          <div class="ai-start bg-terc my">
+            <div class="caja-flex">1</div>
+            <div class="caja-flex">2</div>
+            <div class="caja-flex">3</div>
+          </div>
+        </div>
+        <div class="flex-column">
+          <p>flex-end</p>
+          <div class="ai-end bg-terc my">
+            <div class="caja-flex">1</div>
+            <div class="caja-flex">2</div>
+            <div class="caja-flex">3</div>
+          </div>
+        </div>
+        <div class="flex-column">
+          <p>center</p>
+          <div class="ai-center bg-terc my">
+            <div class="caja-flex">1</div>
+            <div class="caja-flex">2</div>
+            <div class="caja-flex">3</div>
+          </div>
+        </div>
+        <div class="flex-column">
+          <p>stretch</p>
+          <div class="ai-stretch bg-terc my">
+            <div class="caja-flex-stretch">1</div>
+            <div class="caja-flex-stretch">2</div>
+            <div class="caja-flex-stretch">3</div>
+          </div>
+        </div>
+        <div class="flex-column">
+          <p>baseline</p>
+          <div class="ai-baseline bg-terc my">
+            <div class="caja-flex-baseline baseline-1">1</div>
+            <div class="caja-flex-baseline baseline-2">2</div>
+            <div class="caja-flex-baseline baseline-3">3</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ac seccion max-w-sec">
+      <h2>align-content</h2>
+      <p>
+        Con esta prop definimos como se acomodan los elementos en el eje
+        cruzado. Solo va a tener efecto si tenemos varias lineas de elementos.
+        (Si tenemos una sola linea de elementos, no va a tener ningun efecto)
+      </p>
+      <div class="bg-sec max-w alineado">
+        <div class="flex-column">
+          <p>flex-start</p>
+          <div class="ac-start my alineado-ac">
+            <div class="caja-flex">1</div>
+            <div class="caja-flex">2</div>
+            <div class="caja-flex">3</div>
+            <div class="caja-flex">4</div>
+          </div>
+        </div>
+
+        <div class="flex-column">
+          <p>flex-end</p>
+          <div class="ac-end my alineado-ac">
+            <div class="caja-flex">1</div>
+            <div class="caja-flex">2</div>
+            <div class="caja-flex">3</div>
+            <div class="caja-flex">4</div>
+          </div>
+        </div>
+
+        <div class="flex-column">
+          <p>center</p>
+          <div class="ac-center my alineado-ac">
+            <div class="caja-flex">1</div>
+            <div class="caja-flex">2</div>
+            <div class="caja-flex">3</div>
+            <div class="caja-flex">4</div>
+          </div>
+        </div>
+
+        <div class="flex-column">
+          <p>space-between</p>
+          <div class="ac-spa-bet my alineado-ac">
+            <div class="caja-flex">1</div>
+            <div class="caja-flex">2</div>
+            <div class="caja-flex">3</div>
+            <div class="caja-flex">4</div>
+          </div>
+        </div>
+
+        <div class="flex-column">
+          <p>space-around</p>
+          <div class="ac-spa-aro my alineado-ac">
+            <div class="caja-flex">1</div>
+            <div class="caja-flex">2</div>
+            <div class="caja-flex">3</div>
+            <div class="caja-flex">4</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="seccion max-w-sec">
+      <h2>gap</h2>
+      <p>El gap controla el espacio entre los elementos.</p>
+      <div class="bg-terc max-w gap">
+        <p>gap: 10px | row-gap: 10px | column-gap: 10px</p>
+      </div>
+    </div>
+
+    <div class="seccion max-w-sec">
+      <h2>Propiedades para los hijos</h2>
+
+      <h2>Order</h2>
+      <p>
+        Con esta prop podemos modificar el orden en el que aparecen en el
+        contenedor.
+      </p>
+      <div class="bg-sec max-w">
+        <div class="ai-stretch bg-terc my">
+          <div class="caja-flex order-1">1</div>
+          <div class="caja-flex order-2">2</div>
+          <div class="caja-flex order-3">3</div>
+        </div>
+      </div>
+
+      <h2>flex-grow</h2>
+      <p>
+        Con esta prop determinamos el espacio que ocupa dentro del contenedor
+      </p>
+      <div class="bg-sec max-w">
+        <div class="ai-stretch bg-terc my">
+          <div class="caja-flex glow-1">1</div>
+          <div class="caja-flex">2</div>
+          <div class="caja-flex">3</div>
+        </div>
+      </div>
+
+      <h2>flex-shrink</h2>
+      <p>
+        Especificamos el valor de concentracion de un item. Los demas items se
+        van a achicar para llenar el contenedor segun el numero del flex-shrink.
+        Por defecto es 1
+      </p>
+      <div class="bg-sec max-w">
+        <div class="shirnk my">
+          <div class="caja-flex shirnk-1">1</div>
+          <div class="caja-flex shirnk-2">2</div>
+          <div class="caja-flex shirnk-3">3</div>
+        </div>
+      </div>
+
+      <h2>flex-basis</h2>
+      <p>
+        Con esta prop especificamos la base flexible, es el tamaño inicial de un
+        item.
+      </p>
+      <div class="basis my">
+        <div class="caja-flex basis-1">1</div>
+        <div class="caja-flex basis-2">2</div>
+        <div class="caja-flex basis-3">3</div>
+      </div>
+
+      <h2>align-self</h2>
+      <p>
+        Y por último tenemos la prop de align-self, donde podemos anular la
+        alineacion default o la que especifiquemos en el align-items
+      </p>
+      <div class="bg-sec max-w">
+        <div class="self my bg-terc">
+          <div class="caja-flex self-1">1</div>
+          <div class="caja-flex self-2">2</div>
+          <div class="caja-flex self-3">3</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
